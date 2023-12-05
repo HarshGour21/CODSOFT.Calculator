@@ -1,0 +1,23 @@
+def calculate(a,b,operator):
+    if operator=='+':
+        result=a+b
+    elif operator=='-':
+        result=a-b
+    elif operator=='*':
+        result=a*b
+    elif operator=='/':
+        result=a/b
+    elif operator=='**':
+        result=a**b
+    return result
+a=float(input("Enter the first number= "))
+b=float(input("Enter the second number= "))
+print("select operation")
+print("ADD+")
+print("SUBTRACT-")
+print("MULTIPLY*")
+print("DIVIDE/")
+print("EXPONENTIAL**")
+operator=input("Enter operator (+,-,*,/,**)= ")
+result=calculate(a,b,operator)
+print("The result is",a,operator,b, "=" ,result)
